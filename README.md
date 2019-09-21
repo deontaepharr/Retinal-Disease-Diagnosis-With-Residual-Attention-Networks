@@ -86,7 +86,7 @@
     - Drusen -  8,866
     - Normal – 26,565
 
- ## Identifying Medical Diagnoses and Treatable Diseases by Image-Based Deep Learning
+ ## Identifying Medical Diagnoses and Treatable Diseases by Image-Based Deep Learning
 - Paper that inspired this project
 - Authors : Daniel S. Kermany, Michael Goldbaum, Wenjia Cai, ..., M. Anthony Lewis, Huimin Xia, Kang Zhang
 - Utilized a pre-trained network which demonstrated competitive performance of OCT image analysis that was comparable to that of human experts with significant clinical experience with retinal diseases. 
