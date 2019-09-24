@@ -42,22 +42,22 @@ class ResidualAttentionNetwork():
                                      padding='same')(conv_layer_1)
 
         # Residual Unit then Attention Module #1
-        res_unit_1 = self.residual_unit(max_pool_layer_1, filters=[32, 64, 128])
-        att_mod_1 = self.attention_module(res_unit_1, filters=[32, 64, 128])
+        res_unit_1 = self.residual_unit(max_pool_layer_1, filters=[64, 64, 256])
+        att_mod_1 = self.attention_module(res_unit_1, filters=[64, 64, 256])
         
         # Residual Unit then Attention Module #2
-        res_unit_2 = self.residual_unit(att_mod_1, filters=[32, 64, 128])
-        att_mod_2 = self.attention_module(res_unit_2, filters=[32, 64, 128])
+        res_unit_2 = self.residual_unit(att_mod_1, filters=[128, 128, 512])
+        att_mod_2 = self.attention_module(res_unit_2, filters=[128, 128, 512])
 
         # Residual Unit then Attention Module #3
-        res_unit_3 = self.residual_unit(att_mod_2, filters=[32, 64, 128])
-        att_mod_3 = self.attention_module(res_unit_3, filters=[32, 64, 128])
+        res_unit_3 = self.residual_unit(att_mod_2, filters=[256, 256, 1024])
+        att_mod_3 = self.attention_module(res_unit_3, filters=[256, 256, 1024])
 
         # Ending it all
-        res_unit_end_1 = self.residual_unit(att_mod_3, filters=[32, 32, 64])
-        res_unit_end_2 = self.residual_unit(res_unit_end_1, filters=[32, 32, 64])
-        res_unit_end_3 = self.residual_unit(res_unit_end_2, filters=[32, 32, 64])
-        res_unit_end_4 = self.residual_unit(res_unit_end_3, filters=[32, 32, 64])
+        res_unit_end_1 = self.residual_unit(att_mod_3, filters=[512, 512, 2048])
+        res_unit_end_2 = self.residual_unit(res_unit_end_1, filters=[512, 512, 2048])
+        res_unit_end_3 = self.residual_unit(res_unit_end_2, filters=[512, 512, 2048])
+        res_unit_end_4 = self.residual_unit(res_unit_end_3, filters=[512, 512, 2048])
 
         # Avg Pooling
         avg_pool_layer = AveragePooling2D(pool_size=(2, 2), strides=(2, 2))(res_unit_end_4)
@@ -66,13 +66,7 @@ class ResidualAttentionNetwork():
         flatten_op = Flatten()(avg_pool_layer)
 
         # FC Layers for prediction
-        fully_connected_layer_1 = Dense(256, activation='relu')(flatten_op)
-        dropout_layer_1 = Dropout(0.5)(fully_connected_layer_1)
-        fully_connected_layer_2 = Dense(256, activation='relu')(dropout_layer_1)
-        dropout_layer_2 = Dropout(0.5)(fully_connected_layer_2)
-        fully_connected_layer_3 = Dense(256, activation='relu')(dropout_layer_2)
-        dropout_layer_3 = Dropout(0.5)(fully_connected_layer_3)
-        fully_connected_layer_last = Dense(self.n_classes, activation=self.activation)(dropout_layer_3)
+        fully_connected_layer_last = Dense(self.n_classes, activation=self.activation)(flatten_op)
          
         # Fully constructed model
         model = Model(inputs=input_data, outputs=fully_connected_layer_last)

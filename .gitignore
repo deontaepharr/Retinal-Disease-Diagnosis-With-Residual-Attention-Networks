@@ -3,3 +3,4 @@
 *.pyc
 EyeData
 *checkpoint.ipynb
+*.h5
