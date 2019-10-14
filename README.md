@@ -1,6 +1,6 @@
 # Identifying Eye Diseases with Residual Attention Networks
 
-** The progress thus far are preliminary results. I am still in the process of rigorous validation of the efficiency of this deep learning model **
+** __The progress thus far are preliminary results. I am still in the process of rigorous validation of the efficiency of this deep learning model__ **
 
 ## Eye Diseases
 
