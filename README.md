@@ -1,5 +1,7 @@
 # Identifying Eye Diseases with Residual Attention Networks
 
+** The progress thus far are preliminary results. I am still in the process of rigorous validation of the efficiency of this deep learning model **
+
 ## Eye Diseases
 
 - The leading causes of blindness
@@ -94,7 +96,7 @@
 - Read paper here: **[Paper Link](https://www.cell.com/cell/fulltext/S0092-8674(18)30154-5)**
 
 ## Acknowledgements
-- For my preliminary results: **[Repo Link](https://github.com/deontaepharr/Eye-Disease-Classification-With-Residual-Attention-Networks/blob/master/Notebooks/Eye%20Disorder%20Classification%20with%20Residual%20Attention%20Network.ipynb)**
+- For my preliminary results: **[Notebook Link](https://github.com/deontaepharr/Eye-Disease-Classification-With-Residual-Attention-Networks/blob/master/Notebooks/Eye%20Disorder%20Classification%20with%20Residual%20Attention%20Network.ipynb)**
 - Residual Attention Network for Image Classification: **[Paper Link](https://arxiv.org/abs/1704.06904)**
 - Deep Residual Learning for Image Recognition:  **[Paper Link](https://arxiv.org/abs/1512.03385)**
 - Identifying Medical Diagnoses and Treatable Diseases by Image-Based Deep Learning: **[Source Link](https://www.cell.com/cell/fulltext/S0092-8674(18)30154-5)**
