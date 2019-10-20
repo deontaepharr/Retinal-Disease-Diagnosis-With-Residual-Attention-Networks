@@ -1,7 +1,5 @@
 # Identifying Eye Diseases with Residual Attention Networks
 
-** __The progress thus far are preliminary results. I am still in the process of rigorous validation of the efficiency of this deep learning model__ **
-
 ## Eye Diseases
 
 - The leading causes of blindness
@@ -94,6 +92,9 @@
 - Utilized a pre-trained network which demonstrated competitive performance of OCT image analysis that was comparable to that of human experts with significant clinical experience with retinal diseases. 
 - Obtained immaculate results
 - Read paper here: **[Paper Link](https://www.cell.com/cell/fulltext/S0092-8674(18)30154-5)**
+
+## Implementation
+
 
 ## Acknowledgements
 - For my preliminary results: **[Notebook Link](https://github.com/deontaepharr/Eye-Disease-Classification-With-Residual-Attention-Networks/blob/master/Notebooks/Eye%20Disorder%20Classification%20with%20Residual%20Attention%20Network.ipynb)**
