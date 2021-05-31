@@ -95,8 +95,6 @@
 
 ## Implementation
 
-
-## Acknowledgements
 - For my preliminary results: **[Notebook Link](https://github.com/deontaepharr/Eye-Disease-Classification-With-Residual-Attention-Networks/blob/master/Notebooks/Eye%20Disorder%20Classification%20with%20Residual%20Attention%20Network.ipynb)**
 - Residual Attention Network for Image Classification: **[Paper Link](https://arxiv.org/abs/1704.06904)**
 - Deep Residual Learning for Image Recognition:  **[Paper Link](https://arxiv.org/abs/1512.03385)**
